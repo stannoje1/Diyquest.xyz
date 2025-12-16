@@ -42,12 +42,11 @@ export default function ModernWoodenDeskOrganizerPage() {
               {/* Project Image */}
               <div className="relative">
                 <div className="aspect-square bg-muted rounded-lg overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 bg-amber-800 rounded-lg mx-auto mb-4 shadow-lg transform rotate-3"></div>
-                      <p className="text-amber-800 font-medium">Modern Wooden Desk Organizer</p>
-                    </div>
-                  </div>
+                  <img
+                    src="/modern-wooden-desk-organizer-handmade.jpg"
+                    alt="Modern wooden desk organizer with multiple compartments"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* Action Buttons */}
                 <div className="flex gap-2 mt-4">
