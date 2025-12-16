@@ -724,36 +724,80 @@ export default function MacrameWallHangingPage() {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { title: "Macramé Plant Hanger", difficulty: "Beginner", time: "2-3 hours", cost: "$12-20" },
-                { title: "Woven Wall Tapestry", difficulty: "Intermediate", time: "5-7 hours", cost: "$25-40" },
-                { title: "Macramé Room Divider", difficulty: "Advanced", time: "8-12 hours", cost: "$60-90" }
-              ].map((project, i) => (
-                <Card key={i} className="group cursor-pointer hover:shadow-lg transition-all">
+              <Link href="/projects/macrame-plant-hanger">
+                <Card className="group cursor-pointer hover:shadow-lg transition-all">
                   <CardContent className="p-0">
-                    <div className="aspect-video bg-gradient-to-br from-rose-100 to-rose-200 rounded-t-lg flex items-center justify-center">
-                      <div className="text-rose-700 font-medium">{project.title}</div>
+                    <div className="aspect-video bg-gradient-to-br from-green-100 to-green-200 rounded-t-lg flex items-center justify-center">
+                      <div className="text-green-700 font-medium">Macramé Plant Hanger</div>
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-2 mb-2">
-                        <Badge variant={project.difficulty === "Beginner" ? "secondary" : project.difficulty === "Intermediate" ? "default" : "destructive"}>
-                          {project.difficulty}
-                        </Badge>
+                        <Badge variant="secondary">Beginner</Badge>
                       </div>
                       <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
-                        {project.title}
+                        Macramé Plant Hanger
                       </h3>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Continue your fiber arts journey with this beautiful complementary project.
+                        Perfect for beginners! Learn basic knots while creating a functional hanging planter.
                       </p>
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">{project.time}</span>
-                        <span className="font-medium">{project.cost}</span>
+                        <span className="text-muted-foreground">2-3 hours</span>
+                        <span className="font-medium">$15-25</span>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+              </Link>
+
+              <Link href="/projects/woven-wall-tapestry">
+                <Card className="group cursor-pointer hover:shadow-lg transition-all">
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 rounded-t-lg flex items-center justify-center">
+                      <div className="text-purple-700 font-medium">Woven Wall Tapestry</div>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="default">Intermediate</Badge>
+                      </div>
+                      <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                        Woven Wall Tapestry
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Explore traditional weaving techniques to create stunning wall art with texture and color.
+                      </p>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">6-10 hours</span>
+                        <span className="font-medium">$25-50</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link href="/projects/macrame-room-divider">
+                <Card className="group cursor-pointer hover:shadow-lg transition-all">
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg flex items-center justify-center">
+                      <div className="text-blue-700 font-medium">Macramé Room Divider</div>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="destructive">Advanced</Badge>
+                      </div>
+                      <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                        Macramé Room Divider
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Large-scale macramé project for creating stunning room divisions and privacy screens.
+                      </p>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">15-25 hours</span>
+                        <span className="font-medium">$60-120</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             </div>
           </div>
         </section>

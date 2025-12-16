@@ -684,36 +684,80 @@ export default function IndustrialPipeShelvingPage() {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { title: "Industrial Pipe Desk", difficulty: "Advanced", time: "6-8 hours", cost: "$120-180" },
-                { title: "Metal & Wood Coffee Table", difficulty: "Intermediate", time: "4-5 hours", cost: "$80-120" },
-                { title: "Pipe Clothing Rack", difficulty: "Beginner", time: "2-3 hours", cost: "$40-60" }
-              ].map((project, i) => (
-                <Card key={i} className="group cursor-pointer hover:shadow-lg transition-all">
+              <Link href="/projects/industrial-pipe-desk" className="group block">
+                <Card className="group cursor-pointer hover:shadow-lg transition-all">
                   <CardContent className="p-0">
                     <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-t-lg flex items-center justify-center">
-                      <div className="text-slate-600 font-medium">{project.title}</div>
+                      <div className="text-slate-600 font-medium">Industrial Pipe Desk</div>
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-2 mb-2">
-                        <Badge variant={project.difficulty === "Beginner" ? "secondary" : project.difficulty === "Intermediate" ? "default" : "destructive"}>
-                          {project.difficulty}
-                        </Badge>
+                        <Badge variant="destructive">Advanced</Badge>
                       </div>
                       <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
-                        {project.title}
+                        Industrial Pipe Desk
                       </h3>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Continue building your industrial-style furniture collection with this complementary project.
+                        Build a robust industrial-style desk with steel pipes and reclaimed wood. Perfect for modern offices.
                       </p>
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">{project.time}</span>
-                        <span className="font-medium">{project.cost}</span>
+                        <span className="text-muted-foreground">8-12 hours</span>
+                        <span className="font-medium">$120-180</span>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+              </Link>
+
+              <Link href="/projects/metal-wood-coffee-table" className="group block">
+                <Card className="group cursor-pointer hover:shadow-lg transition-all">
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-t-lg flex items-center justify-center">
+                      <div className="text-slate-600 font-medium">Metal & Wood Coffee Table</div>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="default">Intermediate</Badge>
+                      </div>
+                      <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                        Metal & Wood Coffee Table
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Create a stunning coffee table with hairpin legs and beautiful reclaimed wood top.
+                      </p>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">6-8 hours</span>
+                        <span className="font-medium">$80-120</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link href="/projects/pipe-clothing-rack" className="group block">
+                <Card className="group cursor-pointer hover:shadow-lg transition-all">
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 rounded-t-lg flex items-center justify-center">
+                      <div className="text-slate-600 font-medium">Pipe Clothing Rack</div>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="secondary">Beginner</Badge>
+                      </div>
+                      <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                        Pipe Clothing Rack
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Build a stylish clothing rack using galvanized pipes. No welding required!
+                      </p>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">3-4 hours</span>
+                        <span className="font-medium">$45-70</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             </div>
           </div>
         </section>
