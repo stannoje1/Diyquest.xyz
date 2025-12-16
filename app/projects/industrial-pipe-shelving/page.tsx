@@ -43,18 +43,11 @@ export default function IndustrialPipeShelvingPage() {
               {/* Project Image */}
               <div className="relative">
                 <div className="aspect-square bg-muted rounded-lg overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-40 h-32 bg-slate-800 rounded-sm mx-auto mb-4 shadow-lg relative">
-                        <div className="absolute top-2 left-2 w-36 h-2 bg-amber-600 rounded"></div>
-                        <div className="absolute top-6 left-2 w-36 h-2 bg-amber-600 rounded"></div>
-                        <div className="absolute top-10 left-2 w-36 h-2 bg-amber-600 rounded"></div>
-                        <div className="absolute left-0 top-0 w-2 h-full bg-slate-600 rounded"></div>
-                        <div className="absolute right-0 top-0 w-2 h-full bg-slate-600 rounded"></div>
-                      </div>
-                      <p className="text-slate-800 font-medium">Industrial Pipe Shelving</p>
-                    </div>
-                  </div>
+                  <img
+                    src="/industrial-pipe-shelving-unit-rustic-modern.jpg"
+                    alt="Industrial pipe shelving unit with rustic modern design"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 {/* Action Buttons */}
                 <div className="flex gap-2 mt-4">
