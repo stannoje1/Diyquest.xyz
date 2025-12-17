@@ -38,8 +38,8 @@ export default function MacramePlantHanger() {
               
               <div className="aspect-video rounded-lg bg-muted mb-8 flex items-center justify-center">
                 <img
-                  src="/macrame-plant-hanger-boho.jpg"
-                  alt="Macramé plant hanger with cascading greenery"
+                  src="https://images.unsplash.com/photo-1463694775559-eaff25ec6b8a?auto=format&fit=crop&w=800&q=80"
+                  alt="Macramé plant hanger with cascading greenery in boho style interior"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
