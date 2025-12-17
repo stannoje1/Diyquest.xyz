@@ -52,7 +52,7 @@ export function FeaturedProjects() {
                 <div className="relative aspect-[3/2] overflow-hidden">
                   <img
                     src={project.image || "/placeholder.svg"}
-                    alt={project.title}
+                    alt={`${project.title} - ${project.difficulty} ${project.category.toLowerCase()} project tutorial`}
                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                   />
                   <Badge className="absolute top-4 left-4 bg-background/90 text-foreground hover:bg-background">

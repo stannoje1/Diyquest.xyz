@@ -20,8 +20,54 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Macramé Wall Hanging - DIY Fiber Arts Project | DIY Quest",
+  description: "Create beautiful macramé wall art with our step-by-step tutorial. Learn essential knots and techniques to make stunning bohemian home decor.",
+  keywords: ["macrame wall hanging", "fiber arts", "macrame tutorial", "bohemian decor", "wall art DIY", "macrame knots", "home decor"],
+  openGraph: {
+    title: "Macramé Wall Hanging - DIY Tutorial",
+    description: "Learn to create stunning macramé wall art with our comprehensive guide. Perfect for bohemian home decor!",
+    type: "article", 
+    url: "https://diyquest.xyz/projects/macrame-wall-hanging",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Macramé Wall Hanging - DIY Tutorial",
+    description: "Create beautiful macramé wall art with traditional knots and modern flair.",
+  }
+}
 
 export default function MacrameWallHangingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Make a Macramé Wall Hanging',
+    description: 'Step-by-step tutorial for creating a beautiful macramé wall hanging using traditional fiber arts techniques.',
+    image: 'https://diyquest.xyz/beautiful-macrame-wall-hanging-boho-style.jpg',
+    totalTime: 'PT4H',
+    estimatedCost: {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: '27.50'
+    },
+    supply: [
+      'Macrame cord',
+      'Wooden dowel',
+      'Scissors',
+      'Comb for fringe'
+    ],
+    tool: [
+      'Measuring tape',
+      'Scissors',
+      'Comb'
+    ],
+    author: {
+      '@type': 'Organization',
+      name: 'DIY Quest'
+    }
+  }
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

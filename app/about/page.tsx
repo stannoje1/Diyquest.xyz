@@ -4,6 +4,24 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Hammer, Lightbulb, Users, Heart } from "lucide-react"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About DIY Quest - Empowering Makers & DIY Enthusiasts | DIY Quest",
+  description: "Learn about DIY Quest's mission to empower makers and creators. Discover our story, values, and commitment to providing quality DIY tutorials and project guides.",
+  keywords: ["DIY Quest", "about us", "DIY community", "makers", "crafts", "woodworking", "home improvement"],
+  openGraph: {
+    title: "About DIY Quest - Empowering Makers",
+    description: "Discover our mission to empower DIY enthusiasts and makers with quality tutorials and project guides.",
+    type: "website",
+    url: "https://diyquest.xyz/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About DIY Quest",
+    description: "Learn about our mission to empower makers and DIY enthusiasts worldwide.",
+  }
+}
 
 export default function AboutPage() {
   return (
@@ -44,7 +62,11 @@ export default function AboutPage() {
                 </Button>
               </div>
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-muted">
-                <img src="/workshop-tools-and-diy-projects.jpg" alt="DIY Workshop" className="object-cover w-full h-full" />
+                <img 
+                  src="/workshop-tools-and-diy-projects.jpg" 
+                  alt="DIY workshop with various tools and creative projects showcasing the maker community" 
+                  className="object-cover w-full h-full" 
+                />
               </div>
             </div>
           </div>

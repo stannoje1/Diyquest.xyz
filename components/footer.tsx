@@ -52,22 +52,22 @@ export function Footer() {
             <h3 className="font-bold mb-4">Projects</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/categories/woodworking" className="text-muted-foreground hover:text-primary transition-colors">
                   Woodworking
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/categories/home-decor" className="text-muted-foreground hover:text-primary transition-colors">
                   Home Decor
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/categories/garden-outdoor" className="text-muted-foreground hover:text-primary transition-colors">
                   Garden & Outdoor
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/categories/electronics" className="text-muted-foreground hover:text-primary transition-colors">
                   Electronics
                 </Link>
               </li>
@@ -78,23 +78,23 @@ export function Footer() {
             <h3 className="font-bold mb-4">Resources</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Tutorials
+                <Link href="/essential-diy-tools" className="text-muted-foreground hover:text-primary transition-colors">
+                  Essential Tools
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Tool Guides
+                <Link href="/upcycling-furniture" className="text-muted-foreground hover:text-primary transition-colors">
+                  Upcycling Guide
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Community
+                <Link href="/budget-home-organization" className="text-muted-foreground hover:text-primary transition-colors">
+                  Organization Tips
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Blog
+                <Link href="/cozy-reading-nook" className="text-muted-foreground hover:text-primary transition-colors">
+                  Reading Nook Ideas
                 </Link>
               </li>
             </ul>

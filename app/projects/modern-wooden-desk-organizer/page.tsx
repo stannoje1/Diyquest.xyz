@@ -19,11 +19,77 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Modern Wooden Desk Organizer - DIY Woodworking Project | DIY Quest",
+  description: "Learn to build a sleek wooden desk organizer with our step-by-step tutorial. Perfect beginner woodworking project with materials list, tools, and detailed instructions.",
+  keywords: ["wooden desk organizer", "woodworking project", "DIY desk organizer", "beginner woodworking", "desk organization", "woodworking tutorial"],
+  openGraph: {
+    title: "Modern Wooden Desk Organizer - DIY Tutorial",
+    description: "Build a beautiful wooden desk organizer with our comprehensive tutorial. Perfect for organizing your workspace!",
+    type: "article",
+    url: "https://diyquest.xyz/projects/modern-wooden-desk-organizer",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Modern Wooden Desk Organizer - DIY Tutorial",
+    description: "Build a beautiful wooden desk organizer with our step-by-step guide.",
+  }
+}
 
 export default function ModernWoodenDeskOrganizerPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Build a Modern Wooden Desk Organizer',
+    description: 'Step-by-step tutorial for creating a sleek wooden desk organizer perfect for workspace organization.',
+    image: 'https://diyquest.xyz/modern-wooden-desk-organizer-handmade.jpg',
+    totalTime: 'PT3H',
+    estimatedCost: {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: '32.50'
+    },
+    supply: [
+      'Pine wood boards',
+      'Wood glue',
+      'Sandpaper',
+      'Wood stain'
+    ],
+    tool: [
+      'Saw',
+      'Drill',
+      'Measuring tape',
+      'Clamps'
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        text: 'Cut all wood pieces to size according to the cutting list.'
+      },
+      {
+        '@type': 'HowToStep', 
+        text: 'Sand all pieces smooth with 120-grit then 220-grit sandpaper.'
+      },
+      {
+        '@type': 'HowToStep',
+        text: 'Apply wood glue and assemble the organizer using clamps.'
+      }
+    ],
+    author: {
+      '@type': 'Organization',
+      name: 'DIY Quest'
+    }
+  }
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="min-h-screen flex flex-col">
+        <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -534,6 +600,7 @@ export default function ModernWoodenDeskOrganizerPage() {
       </main>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
